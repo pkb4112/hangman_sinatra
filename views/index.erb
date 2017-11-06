@@ -1,0 +1,28 @@
+<html>
+  <head>
+  	<style>
+  	</style>
+  </head>
+  <body>
+    <h2>Hangman</h2>
+    <p> 
+      Remaining Lives: <%= lives %>
+    </br>
+    Incorrect Guesses: <%= incorrects if incorrects %>
+    
+    
+    </p>
+
+    
+    <p> <%= char_spaces %> </p>
+    <form method = 'POST' action = '/'>
+      <input type='text' maxlength='1' name='guess' />
+      </br>
+      <input type='submit' value='Submit Guess' />
+    </form>
+    
+      <p> <%= flash.message %> </p>
+
+  
+  </body>
+</html>
